@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var submitted = false;
+    </script>
+    <iframe
+      name="hiddenConfirm"
+      id="hiddenConfirm"
+      style="display: none"
+      onload="if(submitted){window.location='./submitted.html'}"
+    ></iframe>
+    <form
+      action="https://docs.google.com/forms/d/e/1FAIpQLSdabKxN-FOcCQ6ts2UlRhBZevImBigv4P0XcnEsGUyqquxAFw/formResponse"
+      method="POST"
+      target="hiddenConfirm"
+      onsubmit="submitted=true"
+      class="container"
+    >
+      <div>
+        <label for="entry.20089888">First Name:</label>
+        <input type="text" id="fname" name="entry.20089888" required />
+      </div>
+      <div>
+        <label for="entry.1785267775">Last Name:</label>
+        <input type="text" id="lname" name="entry.1785267775" required />
+      </div>
+      <div>
+        <label for="entry.913077170">Email:</label>
+        <input type="email" id="email" name="entry.913077170" required />
+      </div>
+      <div>
+        <label for="entry.891389050">Phone Number:</label>
+        <input type="tel" id="phone" name="entry.891389050" required />
+      </div>
+      <div>
+        <label>Age</label>
+        <select id="age" for="entry.1053084225">
+          <option value="10-18">10-18</option>
+          <option value="18-25">18-25</option>
+          <option value="26-35">26-35</option>
+        </select>
+      </div>
+      <div>
+        <label>Gender</label>
+        <div>
+          <label for="male">Male</label>
+          <input
+            type="radio"
+            id="male"
+            name="entry.972700002"
+            value="male"
+            required
+          />
+          <label>Female</label>
+          <input
+            type="radio"
+            id="female"
+            name="entry.972700002"
+            value="female"
+            required
+          />
+        </div>
+      </div>
+      <button type="submit">Send Enquiry</button>
+    </form>
+  </body>
+</html>
