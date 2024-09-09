@@ -2,20 +2,28 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <!-- Links the external CSS file for styling -->
     <link rel="stylesheet" href="styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Sets the title of the web page, which appears in the browser tab -->
     <title>Signup Form</title>
   </head>
   <body>
+    <!-- Initialize a JavaScript variable to track form submission status -->
     <script type="text/javascript">
       var submitted = false;
     </script>
+
+    <!-- Hides iframe used to handle form submission without reloading the page -->
+    <!-- && redirects to 'submitted.html' when form is successfully submitted -->
     <iframe
       name="hiddenConfirm"
       id="hiddenConfirm"
       style="display: none"
       onload="if(submitted){window.location='./submitted.html'}"
     ></iframe>
+
+    <!-- Make sure that the'name' attribute always corresponds to the Google Form field -->
     <form
       action="https://docs.google.com/forms/d/e/1FAIpQLSdabKxN-FOcCQ6ts2UlRhBZevImBigv4P0XcnEsGUyqquxAFw/formResponse"
       method="POST"
