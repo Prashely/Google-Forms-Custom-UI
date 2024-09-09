@@ -13,6 +13,7 @@ Follow these steps to build a fully customized front-end for your Google Form, w
 1. **Create a Google Form**  
    - Go to [Google Forms](https://docs.google.com/forms) and create your form with all the questions you want to ask.
    - After you've set up the form, open the preview mode to get the URL. This will be used for submission later.
+   - ![How to get pre-filled link](images/github1.png)
 
 
 2. **Fill the preview form**  
