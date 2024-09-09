@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Form</title>
+    <title>Signup Form</title>
   </head>
   <body>
     <script type="text/javascript">
@@ -20,34 +20,35 @@
       action="https://docs.google.com/forms/d/e/1FAIpQLSdabKxN-FOcCQ6ts2UlRhBZevImBigv4P0XcnEsGUyqquxAFw/formResponse"
       method="POST"
       target="hiddenConfirm"
-      onsubmit="submitted=true"
+      onsubmit="submitted=true; return true;"
       class="container"
     >
-      <div>
-        <label for="entry.20089888">First Name:</label>
+      <h1>Signup Form</h1>
+      <div class="label_input">
+        <label for="fname">First Name:</label>
         <input type="text" id="fname" name="entry.20089888" required />
       </div>
-      <div>
-        <label for="entry.1785267775">Last Name:</label>
+      <div class="label_input">
+        <label for="lname">Last Name:</label>
         <input type="text" id="lname" name="entry.1785267775" required />
       </div>
-      <div>
-        <label for="entry.913077170">Email:</label>
+      <div class="label_input">
+        <label for="email">Email:</label>
         <input type="email" id="email" name="entry.913077170" required />
       </div>
-      <div>
-        <label for="entry.891389050">Phone Number:</label>
+      <div class="label_input">
+        <label for="phone">Phone Number:</label>
         <input type="tel" id="phone" name="entry.891389050" required />
       </div>
-      <div>
-        <label>Age</label>
-        <select id="age" for="entry.1053084225">
+      <div class="label_input">
+        <label for="age">Age</label>
+        <select id="age" name="entry.1053084225">
           <option value="10-18">10-18</option>
           <option value="18-25">18-25</option>
           <option value="26-35">26-35</option>
         </select>
       </div>
-      <div>
+      <div class="label_input">
         <label>Gender</label>
         <div>
           <label for="male">Male</label>
@@ -58,7 +59,7 @@
             value="male"
             required
           />
-          <label>Female</label>
+          <label for="female">Female</label>
           <input
             type="radio"
             id="female"

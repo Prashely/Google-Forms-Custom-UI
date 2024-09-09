@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    color: #1E1E1E;
 }
 
 body {
@@ -12,7 +13,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60vh;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+input {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #1E1E1E;
 }
 
 .container {
@@ -20,6 +32,24 @@ body {
     background-color: #F2F2F2;
     border: 1rem solid #1E1E1E;
     border-radius: 2rem;
+}
+
+.label_input {
+    padding-bottom: 1rem;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    background-color: #1E1E1E;
+    color: #F2F2F2;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+a {
+    text-align: center;
 }
 
 /* viewform?usp=pp_url&entry.20089888=Prashely& entry.1785267775=Maluleke& entry.913077170=prashelym@gmsil.com& entry.891389050=068+392+8066& entry.1053084225=18-25& entry.972700002=male*/
